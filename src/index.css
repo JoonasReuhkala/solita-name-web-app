@@ -1,13 +1,328 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  background-color: var(--color2);
+  border: none;
+
+  --color1: #f1e3dd;
+  --color2: #667292;
+  --color3: #8d9db6;
+  --color4: #bccad6;
+  --color5: #cfe0e8;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Potrait {
+  width: 4cm;
+  height: 4cm;
+  border-radius: 2cm;
 }
+
+.PotraitFrame {
+  z-index: 6;
+  position: absolute;
+  top: 11.75cm;
+  left: 5cm;
+  border-radius: 2cm;
+}
+
+.Container {
+  z-index: 0;
+  background-color: white;
+  width: 30cm;
+  height: 20cm;
+  top: 0.5cm;
+  left: 0.5cm;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.5cm;
+}
+
+.Button {
+  background-color: #87bdd8;
+  width: 4cm;
+  height: 1cm;
+
+  text-align: center;
+}
+
+.Input {
+  width: 4.75cm;
+  height: 0.75cm;
+  text-align: center;
+}
+
+.Top {
+  position: absolute;
+  top: 0.5cm;
+  left: 1cm;
+}
+
+.SearchField {
+  position: absolute;
+  top: 16.5cm;
+  left: 0.5cm;
+}
+
+.InfoBackground {
+  position: absolute;
+  background-color: var(--color5);
+  width: 9cm;
+  height: 13.75cm;
+  top: 2cm;
+  left: 0.5cm;
+}
+
+.InfoText {
+  position: absolute;
+  width: 8cm;
+  height: 12.75cm;
+  top: 0.5cm;
+  left: 0.5cm;
+}
+
+.Table {
+  position: absolute;
+  top: 2cm;
+}
+
+.Sorting {
+  position: absolute;
+  top: 0.5cm;
+  left: 1cm;
+}
+
+.Board {
+  position: absolute;
+}
+
+.Visible {
+  visibility: visible;
+}
+
+.Hidden {
+  visibility: hidden;
+}
+
+.Title {
+  position: absolute;
+  z-index: 5;
+  height: 1.5cm;
+  width: 10cm;
+  top: 0.5cm;
+  left: 10cm;
+}
+
+.Hiring {
+  position: absolute;
+  top: 16.5cm;
+  left: 1cm;
+}
+
+.CellBig {
+  z-index: 5;
+  background-color: whitesmoke;
+  width: 4cm;
+  height: 1cm;
+  text-align: center;
+}
+
+.CellSmall {
+  z-index: 5;
+  background-color: whitesmoke;
+  width: 2cm;
+  height: 1cm;
+}
+
+.Card:hover {
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.Navigation {
+  z-index: 4;
+  background-color: #e4d1d1;
+  width: 30cm;
+  height: 2cm;
+}
+.Data {
+  z-index: 3;
+  background-color: var(--color1);
+  width: 10cm;
+  height: 18cm;
+  top: 2cm;
+  left: 10cm;
+}
+
+.Paging {
+  position: absolute;
+  top: 16.5cm;
+  left: 1cm;
+}
+
+.Message {
+  z-index: 2;
+  background-color: var(--color4);
+  width: 10cm;
+  height: 18cm;
+  top: 2cm;
+  left: 0cm;
+}
+.Help {
+  z-index: 1;
+  background-color: var(--color5);
+  width: 10cm;
+  height: 18cm;
+  top: 2cm;
+  left: 20cm;
+}
+
+/* :root {
+  --bg: darkslategray;
+  --bg-accent: gray;
+  --text-color: whitesmoke;
+  --nav-size: 60px;
+  --border: 1px solid lightgray;
+  --border-radius: 8px solid;
+  --speed: 500ms;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.navbar {
+  height: var(--nav-size);
+  background-color: var(--bg);
+  padding: 0 1rem;
+  border-bottom: var(--border);
+}
+
+.navbar-nav {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+} */
+
+/* :root {
+  font-family: sans-serif;
+  color: darkslategray;
+  background-color: silver;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-size: 0.75rem;
+  text-align: center;
+  outline: none;
+  border: none;
+} */
+
+/* td,
+th {
+  height: 50px;
+  width: 150px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: azure;
+} */
+
+/* .messageBoard {
+  margin-top: 100px;
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.button {
+  background-color: cadetblue;
+  height: 50px;
+  width: 150px;
+}
+
+.InfoBackground {
+  background-color: rosybrown;
+  color: whitesmoke;
+  height: 50px;
+  width: 75px;
+}
+
+.empty {
+  visibility: hidden;
+}
+
+.sorting {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.data {
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.hirefire {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+ */
+/* .navbar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 50px;
+  text-align: left;
+  background-color: rosybrown;
+}
+
+.messageboard {
+  position: absolute;
+  left: 250px;
+  top: 100px;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+.sortingButtons {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+}
+
+.button1 {
+  width: 125px;
+  height: 50px;
+  background-color: whitesmoke;
+}
+
+.databoard {
+  position: absolute;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.searchfield {
+  position: absolute;
+  left: 250px;
+  top: 375px;
+  text-align: left;
+  background-color: whitesmoke;
+}
+
+.hirefire {
+  position: absolute;
+  left: 250px;
+  top: 400px;
+}
+ */
