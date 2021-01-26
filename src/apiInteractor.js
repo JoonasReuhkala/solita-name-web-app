@@ -9,8 +9,12 @@ const apiInteractor = {
     await Axios.get(apiEndpoint, { params: { userKey : _key } })
     .then(response => response.data),
 
+  getEmployeeAllByAmount: async (apiEndpoint, _key) =>
+    await Axios.get(apiEndpoint + "/byAmount", { params: { userKey : _key } })
+    .then(response => response.data),
+
   addEmployee: async (apiEndpoint, _key) =>
-    await Axios.post(apiEndpoint, { body: { userKey : _key } })
+    await Axios.post(apiEndpoint, {}, { params: { userKey : _key } })
     .then(response => response.data),
 
   removeEmployee: async(apiEndpoint, _key) =>
